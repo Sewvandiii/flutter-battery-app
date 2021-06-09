@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         title: title,
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.black,
-          primarySwatch: Colors.purple,
+          primarySwatch: Colors.blue,
         ),
         home: BatteryPage(),
       );

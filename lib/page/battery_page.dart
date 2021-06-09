@@ -64,7 +64,7 @@ class _BatteryPageState extends State<BatteryPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               buildBatteryState(batteryState),
-              const SizedBox(height: 32),
+              const SizedBox(height: 30),
               buildBatteryLevel(batteryLevel),
             ],
           ),
@@ -72,8 +72,8 @@ class _BatteryPageState extends State<BatteryPage> {
       );
 
   Widget buildBatteryState(BatteryState batteryState) {
-    final style = TextStyle(fontSize: 32, color: Colors.white);
-    final double size = 300;
+    final style = TextStyle(fontSize: 25, color: Colors.white);
+    final double size = 280;
 
     switch (batteryState) {
       case BatteryState.full:
@@ -109,7 +109,7 @@ class _BatteryPageState extends State<BatteryPage> {
   Widget buildBatteryLevel(int batteryLevel) => Text(
         '$batteryLevel%',
         style: TextStyle(
-          fontSize: 46,
+          fontSize: 40,
           color: Colors.white,
           fontWeight: FontWeight.bold,
         ),
