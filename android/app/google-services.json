@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1075325891159",
+    "project_id": "battery-level-app",
+    "storage_bucket": "battery-level-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075325891159:android:e04a33854971c0a845a912",
+        "android_client_info": {
+          "package_name": "com.example.battery_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075325891159-rdelftdbt8gnsgrmbcmhosdifgqr9a90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLnFE5v5g5L4oWQKlXiD9qTFqzYgSryLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075325891159-rdelftdbt8gnsgrmbcmhosdifgqr9a90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
