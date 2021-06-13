@@ -1,7 +1,7 @@
 class BatteryLevel {
   String _id;
   String _status;
-  String _level;
+  int _level;
 
   BatteryLevel(this._id, this._status, this._level);
 
@@ -12,23 +12,23 @@ class BatteryLevel {
   }
 
   String get id => _id;
-  String get title => _status;
-  String get body => _level;
+  String get status => _status;
+  int get level => _level;
 
   Map<String, dynamic> toMap() {
     var map = new Map<String, dynamic>();
     if (_id != null) {
       map['id'] = _id;
     }
-    map['title'] = _status;
-    map['body'] = _level;
+    map['status'] = _status;
+    map['level'] = _level;
 
     return map;
   }
 
   BatteryLevel.fromMap(Map<String, dynamic> map) {
     this._id = map['id'];
-    this._status = map['title'];
+    this._status = map['status'];
     this._level = map['level'];
   }
 }

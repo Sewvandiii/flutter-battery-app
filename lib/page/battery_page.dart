@@ -4,7 +4,7 @@ import 'package:battery_example/main.dart';
 import 'package:flutter/material.dart';
 import 'package:battery/battery.dart';
 import 'package:battery_example/models/battery_level.dart';
-import 'package:battery_example/services/services.dart';
+import 'package:battery_example/services/battery_service.dart';
 
 class BatteryPage extends StatefulWidget {
   @override
@@ -32,14 +32,17 @@ class _BatteryPageState extends State<BatteryPage> {
 
     _batteryList = [];
     batterySubsciption?.cancel();
-    batterySubsciption = _batteryList.getAll().listen((QuerySnapshot snapshot) {
+    batterySubsciption =
+        _batteryService.getAll().listen((QuerySnapshot snapshot) {
       final List<BatteryLevel> batteriess =
           snapshot.docs.map((d) => BatteryLevel.fromMap(d.data())).toList();
-        
+
       setState(() {
         this._batteryList = batteriess;
       });
     });
+
+    _batteryService.create(new BatteryLevel(" ", batteryState.toString(), batteryLevel));
   }
 
   void listenBatteryState() =>
