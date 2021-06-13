@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.black,
           primarySwatch: Colors.blue,
-          debugShowCheckedModeBanner: false,
-          initialRoute: '/',
-          onGenerateRoute: RouteGenerator.generateRoute,
+          
         ),
         home: BatteryPage(),
+          initialRoute: '/',
+          onGenerateRoute: RouteGenerator.generateRoute,
       );
 }
